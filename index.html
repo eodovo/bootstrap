@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/masonry/">
+
+    <!-- <script src="./js/prefixfree.min.js"></script> -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script> -->
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function () {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) { }
+	// ]]>
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#navbar">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="container-fluid">
+        <header id="headerArea">
+            <h1><a href="./index.html">SUBWAY</a></h1>
+            <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+                <h2 class="hidden">글로벌네비게이션</h2>
+                <div class="header_inner" id="#top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".bs-example-js-navbar-scrollspy">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="서브웨이 로고"><span
+                                class="text-hide">서브웨이</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right bs-example-js-navbar-scrollspy">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#what">WHAT-SUB</a>
+                                <h3 class="hidden">WHAT-SUB</h3>
+                            </li>
+                            <li><a href="#play">PLAY</a>
+                                <h3 class="hidden">PLAY</h3>
+                            </li>
+                            <li><a href="#brand">BRAND</a>
+                                <h3 class="hidden">BRAND</h3>
+                            </li>
+                            <li><a href="#franchise">FRANCHISE</a>
+                                <h3 class="hidden">FRANCHISE</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide carousel-fade">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./images/main1.png" alt="First slide">
+                        <p class="carousel-caption">
+                            <span>Better Choice</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./images/main2.png" alt="Second slide">
+                        <p class="carousel-caption">
+                            <span>Fresh Ingredients</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./images/main3.png" alt="Third slide">
+                        <p class="carousel-caption">
+                            <span>SEARCH FOR BETTER</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </header>
+        <article id="content">
+            <h2 class="hidden">본문 콘텐츠영역</h2>
+            <!-- <div class="midbg"></div> -->
+            <div id="section1">
+                <div class="intro" id="what">
+                    <P>WHAT-SUB</P>
+                    <h3>서브웨이 메뉴소개</h3>
+                    <p>전세계 넘버원 브랜드 Subway!<br>
+                        50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+                </div>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a href="#home" data-toggle="tab">샌드위치</a></li>
+                    <li class="nav-item"><a href="#tab1" data-toggle="tab">랩ㆍ기타
+                        </a></li>
+                    <li class="nav-item"><a href="#tab2" data-toggle="tab">샐러드</a></li>
+                    <li class="nav-item"><a href="#tab3" data-toggle="tab">아침메뉴</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+
+                        <ul>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image1.png" alt=" 바비큐">
+                                    <div class="inner">
+                                        <strong>스파이시 바비큐</strong>
+                                        <p>374kcal</p>
+                                        <dl>
+                                            <dt>스파이시 바비큐</dt>
+                                            <dd>Spice BBQ</dd>
+                                            <dd>부드러운 풀드포크에 매콤한 맛을 더했다!<br>올 겨울 자꾸만 생각 날 매콤한 맛을 써브웨이 스파이시 바비큐로 만나보세요!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image2.png" alt="바비큐">
+                                    <div class="inner">
+                                        <strong>K-바비큐</strong>
+                                        <p>372kcal</p>
+                                        <dl>
+                                            <dt>K-바비큐</dt>
+                                            <dd>K-BBQ</dd>
+                                            <dd>써브웨이의 코리안 스타일 샌드위치!<br>마늘, 간장 그리고 은은한 불맛까지!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image3.png" alt="바비큐">
+                                    <div class="inner">
+                                        <strong>폴드 포크 바비큐</strong>
+                                        <p>327kcal</p>
+                                        <dl>
+                                            <dt>폴드 포크 바비큐</dt>
+                                            <dd>Pulled Pork Barbecue</dd>
+                                            <dd>미국 스타일의 풀드 포크 바비큐가 가득 들어간 샌드위치
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image4.png" alt="머쉬룸">
+                                    <div class="inner">
+                                        <strong>머쉬룸</strong>
+                                        <p>245kcal</p>
+                                        <dl>
+                                            <dt>머쉬룸</dt>
+                                            <dd>Mushroom</dd>
+                                            <dd>Better Choice, Mushroom!<br>써브웨이의 신선한 야채와 건강함을 담은 버섯이 만나,<br> 맛도! 건강도!
+                                                모두
+                                                담아낸 담백한 시즌 한정 샌드위치!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image5.png" alt="이탈리안">
+                                    <div class="inner">
+                                        <strong>이탈리안 비엠티</strong>
+                                        <p>388kcal</p>
+                                        <dl>
+                                            <dt>이탈리안 비엠티</dt>
+                                            <dd>Italian B.M.T.</dd>
+                                            <dd>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! <br>전세계가 사랑하는 써브웨이의 베스트셀러!<br>Biggest
+                                                Meatiest Tastiest, its’ B.M.T.
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-">
+                                <div class="pop">
+                                    <img src="./images/sandwich/image6.png" alt="써브웨이">
+                                    <div class="inner">
+                                        <strong>써브웨이 클럽</strong>
+                                        <p>299kcal</p>
+                                        <dl>
+                                            <dt>써브웨이 클럽</dt>
+                                            <dd>Subway Club</dd>
+                                            <dd>고소한 베이컨, 담백한 치킨 슬라이스에<br> 햄까지 더해진 완벽한 앙상블
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab1">
+                        <ul>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab1.png" alt="랩">
+                                    <div class="inner">
+                                        <strong>쉬림프 에그 그릴드 랩</strong>
+                                        <p>366 kcal</p>
+                                        <dl>
+                                            <dt>쉬림프 에그 그릴드 랩</dt>
+                                            <dd>Shrimp Egg Grilled Wrap</dd>
+                                            <dd>더 뜨겁게, 더 맛있게 즐기자!<br>탱글한 새우와 부드러운 오믈렛의 만남
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab2.png" alt="랩">
+                                    <div class="inner">
+                                        <strong>스테이크 & 치즈 아보카도 그릴드 랩</strong>
+                                        <p>372kcal</p>
+                                        <dl>
+                                            <dt>스테이크 & 치즈 아보카도 그릴드 랩</dt>
+                                            <dd>Steak & Cheese Avocado Grilled Wrap</dd>
+                                            <dd>더 뜨겁게, 더 맛있게 즐기자!!<br>육즙이 쫙~ 비프 스테이크와 아보카도가 만나다!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab3.png" alt="lab">
+                                    <div class="inner">
+                                        <strong>치킨 베이컨 미니 그릴드 랩</strong>
+                                        <p>392 kcal</p>
+                                        <dl>
+                                            <dt>치킨 베이컨 미니 그릴드 랩</dt>
+                                            <dd>Chicken Bacon Mini Grilled Wrap</dd>
+                                            <dd>더 뜨겁게 더 맛있게 즐기자!<br>담백한 치킨, 바삭한 베이컨 비츠가 쏙
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab4.png" alt="lab">
+                                    <div class="inner">
+                                        <strong>스테이크 & 치즈 아보카도 랩</strong>
+                                        <p>478 kcal</p>
+                                        <dl>
+                                            <dt>스테이크 & 치즈 아보카도 랩</dt>
+                                            <dd>Steak & Cheese Avocado Wrap</dd>
+                                            <dd>육즙 가득 스테이크에 프레쉬함을 더해줄<br>아보카도와 슈레드치즈 그리고<br>모차렐라치즈까지!<br>
+
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab5.png" alt="lab">
+                                    <div class="inner">
+                                        <strong>쉬림프 에그마요 랩</strong>
+                                        <p>506 kcal</p>
+                                        <dl>
+                                            <dt>쉬림프 에그마요 랩</dt>
+                                            <dd>Shrimp Egg Mayo Wrap</dd>
+                                            <dd>부드럽고 고소한 에그마요 안에<br>탱글한 통새우가 푹~!<br>최상의 야채와 소스 조합으로 탄생한<br>쉬림프 에그마요 랩!!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/lab/lab6.png" alt="lab">
+                                    <div class="inner">
+                                        <strong>치킨 베이컨 미니 랩</strong>
+                                        <p>391 kcal</p>
+                                        <dl>
+                                            <dt>치킨 베이컨 미니 랩</dt>
+                                            <dd>Chicken Bacon Mini Wrap</dd>
+                                            <dd>담백한 치킨, 바삭한 베이컨 비츠가<br>쫀득한 통밀 랩에 쏘옥!<br>치킨 베이컨 미니 랩
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="tab-pane fade" id="tab2">
+                        <ul>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>스파이시 바비큐</strong>
+                                        <p>212 kcal</p>
+                                        <dl>
+                                            <dt>스파이시 바비큐</dt>
+                                            <dd>Spice BBQ</dd>
+                                            <dd>부드러운 풀드포크에 매콤한 맛을 더했다!<br>올 겨울 자꾸만 생각 날 매콤한 맛을 써브웨이 스파이시 바비큐로 만나보세요!
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>로스트 치킨</strong>
+                                        <p>138 kcal</p>
+                                        <dl>
+                                            <dt>로스트 치킨</dt>
+                                            <dd>Roasted Chicken</dd>
+                                            <dd>오븐에 구워 담백한 저칼로리 닭가슴살의 건강한 풍미
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>쉬림프</strong>
+                                        <p>66.9 kcal</p>
+                                        <dl>
+                                            <dt>쉬림프</dt>
+                                            <dd>Shrimp</dd>
+                                            <dd>탱글한 식감이 그대로 살아있는<br>통새우가 5마리가<br>샐러드에 쏙 ! Fresh함이 그대로~
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>치킨 데리야끼</strong>
+                                        <p>152 kcal</p>
+                                        <dl>
+                                            <dt>치킨 데리야끼</dt>
+                                            <dd>Chicken Teriyaki</dd>
+                                            <dd>담백한 치킨 스트립에 달콤짭쪼름한 써브웨이 특제 데리야끼 소스 토핑으로 더 풍성한 샐러드
+
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>302 kcal</p>
+                                        <dl>
+                                            <dt>스파이시 이탈리안</dt>
+                                            <dd>Spicy Italian</dd>
+                                            <dd>살라미, 페퍼로니가 입안 한가득!<br> 진짜 이탈리아의 맛 가득한 샐러드
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/sal/sal1.png" alt="salad">
+                                    <div class="inner">
+                                        <strong>비엘티</strong>
+                                        <p>153 kcal</p>
+                                        <dl>
+                                            <dt>비엘티</dt>
+                                            <dd>B.L.T.</dd>
+                                            <dd>오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로~
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="tab-pane fade" id="tab3">
+                        <ul>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub1.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>고구마 칩</strong>
+                                        <p>221 kcal</p>
+                                        <dl>
+                                            <dt>고구마 칩</dt>
+                                            <dd>Crisscut Sweet Potato</dd>
+                                            <dd>오븐에 구워 더 부드럽고 달콤, 담백한 고구마 칩
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub2.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>머쉬룸 수프</strong>
+                                        <p>147 kcal</p>
+                                        <dl>
+                                            <dt>머쉬룸 수프</dt>
+                                            <dd>Mushroom Soup</dd>
+                                            <dd>2022년 겨울, 새롭게 선보이는 부드러운 머쉬룸 수프
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub3.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>우유</strong>
+                                        <p>125 kcal</p>
+                                        <dl>
+                                            <dt>우유</dt>
+                                            <dd>Milk</dd>
+                                            <dd>* 매장 별 판매 여부는 상이할 수 있습니다.
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub4.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>치킨 베이컨 미니 랩</strong>
+                                        <p>391 kcal</p>
+                                        <dl>
+                                            <dt>치킨 베이컨 미니 랩</dt>
+                                            <dd>Chicken Bacon Mini Wrap</dd>
+                                            <dd>담백한 치킨, 바삭한 베이컨 비츠가<br>쫀득한 통밀 랩에 쏘옥!<br>치킨 베이컨 미니 랩
+
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub5.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>웨지 포테이토</strong>
+                                        <p>140 kcal</p>
+                                        <dl>
+                                            <dt>웨지 포테이토</dt>
+                                            <dd>Ovenbaked Wedge Potatoes</dd>
+                                            <dd>오븐에 구워 더 담백,<br>겉은 바삭 속은 촉촉한 건강한 사이드<br>※제공시간 : 오전 11시 ~
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pop">
+                                    <img src="./images/smile/sub6.png" alt="smile">
+                                    <div class="inner">
+                                        <strong>Cheesy 웨지 포테이토</strong>
+                                        <p>194 kcal</p>
+                                        <dl>
+                                            <dt>Cheesy 웨지 포테이토</dt>
+                                            <dd>Cheesy Ovenbaked Wedge Potatoes</dd>
+                                            <dd>치즈 풍미 한가득, 오븐에 구워<br>더 담백한 겉은 바삭<br>속은 촉촉한 건강한 사이드<br>※제공시간 : 오전 11시 ~
+                                            </dd>
+                                            <dd><button class="btn btn-primary btn-lg" data-toggle="modal"
+                                                    data-target="#s1">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                </button></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal fade" id="s1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">영양성분표</h4>
+                            </div>
+                            <div class="modal-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">중량(g)</th>
+                                            <th scope="col">열량(kcal)</th>
+                                            <th scope="col">단백질(g)</th>
+                                            <th scope="col">포화지방(g)</th>
+                                            <th scope="col">당류(g)</th>
+                                            <th scope="col">나트륨(mg)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>256</td>
+                                            <td>374</td>
+                                            <td>25.2(46%)</td>
+                                            <td>7.4(13.5%)</td>
+                                            <td>15.0(15%)</td>
+                                            <td>903(45%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> <!-- 모달 콘텐츠 -->
+                    </div> <!-- 모달 다이얼로그 -->
+                </div> <!-- 모달 전체 윈도우 -->
+            </div>
+
+
+            <div id="section2">
+
+                <div class="intro" id="play">
+                    <P>PLAY</P>
+                    <h3>서브웨이 이용방법</h3>
+                    <p>써브웨이를 제대로 즐기는 방법!<br>
+                        나만의 서브웨이를 만들어보세요!</p>
+                </div>
+
+
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a href="#made" data-toggle="tab">매장에서 주문하기</a></li>
+                    <li class="nav-item"><a href="#tip" data-toggle="tab">주문 TIP !</a></li>
+                </ul>
+
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade in active" id="made">
+                        <div id="myCarousel" class="carousel slide" data-interval="false">
+                            <div style="text-align:center;" class="gallery">
+                                <input type="button" class="btn slide-one mbutton" value="STEP 1">
+                                <input type="button" class="btn slide-two mbutton" value="STEP 2">
+                                <input type="button" class="btn slide-three mbutton" value="STEP 3">
+                                <input type="button" class="btn slide-four mbutton" value="STEP 4">
+                                <input type="button" class="btn slide-five mbutton" value="STEP 5">
+                            </div>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner playFlex">
+                                <div class="item active">
+                                    <img src="./images/play/slide1.png" alt="슬라이드 1">
+                                    <div class="playInner">
+                                        <p>STEP 1</p>
+                                        <dl>
+                                            <dt>메뉴 선택</dt>
+                                            <dd>메뉴를 고르세요.<br>
+                                                샌드위치(15cm 또는 30cm)와<br>
+                                                샐러드 중 선택 가능합니다.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./images/play/slide2.png" alt="슬라이드 2">
+                                    <div class="playInner">
+                                        <p>STEP 2</p>
+                                        <dl>
+                                            <dt>빵 선택 (샐러드 선택 시 제외)</dt>
+                                            <dd>매장에서 직접 구운 6가지 종류 중<br>
+                                                고객님이 원하는 빵으로<br>
+                                                추가비용 없이 선택 가능합니다.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./images/play/slide3.png" alt="슬라이드 3">
+                                    <div class="playInner">
+                                        <p>STEP 3</p>
+                                        <dl>
+                                            <dt>추가토핑 선택</dt>
+                                            <dd>나만의 메뉴를 더욱 풍성하게 즐기세요.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./images/play/slide4.png" alt="슬라이드 3">
+                                    <div class="playInner">
+                                        <p>STEP 4</p>
+                                        <dl>
+                                            <dt>야채&소스 선택
+                                            </dt>
+                                            <dd>나만의 스타일을 완성하는 단계!<br>
+                                                원하지 않는 야채는 빼고 좋아하는 야채는 더하세요.<br>
+                                                오늘의 기분에 맞는 소스를 선택해주세요.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./images/play/slide5.png" alt="슬라이드 3">
+                                    <div class="playInner">
+                                        <p>STEP 5</p>
+                                        <dl>
+                                            <dt>세트 선택</dt>
+                                            <dd>세트로 구매하시면 할인혜택을<br>
+                                                받으실 수 있습니다. 세트로<br>
+                                                더욱 든든하고 알차게 즐기세요.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="icon-prev played"></span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="icon-next played"></span>
+                            </a>
+                            <!-- Controls buttons -->
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="tip">
+                        <div class="tip1">
+                            <div class="tipInner">
+                                <p>완벽한 한끼를 원하신다면?</p>
+                                <strong>스테이크 & 치즈</strong>
+                                <p>고급스러운 스테이크와 고소하고 진한 치즈의 콜라보<br>
+                                    신선한 야채와 함께 푸짐하고 완벽한 한끼가 완성됩니다!<br>
+                                    다양한 토핑을 추가해 나만의 한끼 메뉴를 즐겨보세요.</p>
+                            </div>
+                            <img src="./images/play/tip1.png" alt="tip">
+                        </div>
+                        <div class="tipInner2">
+                            <strong>더 맛있게 즐기는 <span>TIP</span></strong>
+                            <ul>
+                                <li><img src="./images/play/tip1inner1.jpg" alt="tip">
+                                    <dl>
+                                        <dt>CHEESE</dt>
+                                        <dd>더블치즈로 치즈와 쇠고기의
+                                            완벽한 조화!</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip1inner2.jpg" alt="tip">
+                                    <dl>
+                                        <dt>SAUCE</dt>
+                                        <dd>달콤하게 즐기고 싶다면 스윗어니언+마요네즈!<br>
+                                            스테이크의 맛을 즐기고 싶다면 후추만 톡톡!</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip1inner3.jpg" alt="tip">
+                                    <dl>
+                                        <dt>VEGETABLE</dt>
+                                        <dd>토마토, 오이를 빼면
+                                            고기의 풍미를 즐길 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tip2">
+                            <div class="tipInner">
+                                <p>다이어트중이라면?</p>
+                                <strong>로스트치킨</strong>
+                                <p>퍽퍽한 닭가슴살은 이제 그만!<br>
+                                    로스트 치킨 샐러드는 가볍고 든든하게 즐길 수 있습니다.<br>
+                                    샌드위치와 샐러드로 맛있고 든든하게 즐기세요.</p>
+                            </div>
+                            <img src="./images/play/tip2.png" alt="tip">
+                        </div>
+                        <div class="tipInner2">
+                            <strong>더 맛있게 즐기는 <span>TIP</span></strong>
+                            <ul>
+                                <li><img src="./images/play/tip2inner1.jpg" alt="tip">
+                                    <dl>
+                                        <dt>SALAD</dt>
+                                        <dd>로스트치킨은 샐러드로 드셔도 좋습니다.<br>
+                                            관리의 시작은 써브웨이로부터!</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip2inner2.jpg" alt="tip">
+                                    <dl>
+                                        <dt>SAUCE</dt>
+                                        <dd>랜치로 고소하게 즐겨보세요!</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip2inner3.jpg" alt="tip">
+                                    <dl>
+                                        <dt>TOPPING</dt>
+                                        <dd>올리브, 피클, 할라피뇨를 빼고 드시면,<br>
+                                            담백하고 부드러운 로스트 치킨을<br>
+                                            제대로 즐길 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tip3">
+                            <div class="tipInner">
+                                <p>건강을 생각한다면?</p>
+                                <strong>써브웨이 클럽</strong>
+                                <p>고기의 단백질과 야채의 비타민으로 영양UP!<br>
+                                    절임류 야채를 제외해서 더 담백하게,<br> 올리브오일을 넣어 부담은 DOWN!<br>
+                                    써브웨이 클럽으로 건강한 하루를 보내세요.</p>
+                            </div>
+                            <img src="./images/play/tip3.png" alt="tip">
+                        </div>
+                        <div class="tipInner2">
+                            <strong>더 맛있게 즐기는 <span>TIP</span></strong>
+                            <ul>
+                                <li><img src="./images/play/tip3inner1.jpg" alt="tip">
+                                    <dl>
+                                        <dt>CHEESE</dt>
+                                        <dd>올리브오일과 후추를 살짝 뿌리면,<br>
+                                            짜지않고 담백한 행복한 맛을 느낄 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip1inner1.jpg" alt="tip">
+                                    <dl>
+                                        <dt>CHEESE</dt>
+                                        <dd>치즈를 빼고 터키, 베이컨,<br>
+                                            햄의 완벽한 조화를 느껴보세요!</dd>
+                                    </dl>
+                                </li>
+                                <li><img src="./images/play/tip2inner3.jpg" alt="tip">
+                                    <dl>
+                                        <dt>TOPPING</dt>
+                                        <dd>올리브, 피클, 할라피뇨를 빼고 드시면,<br>
+                                            담백하고 부드러운 로스트 치킨을<br>
+                                            제대로 즐길 수 있습니다.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="midbg"></div>
+
+
+            <div id="section3">
+                <div class="intro" id="brand">
+                    <P>BRAND</P>
+                    <h3>서브웨이 역사</h3>
+                    <p>서브웨이를 소개합니다.</p>
+                </div>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>1965</dt>
+                            <dd>17세 사업가, 프레드 델루카<br>
+                                Pete’s Super Submarines 오픈<br>
+                                (미국, 코네티컷)
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1968</dt>
+                            <dd>공식 명칭 ‘써브웨이’ 사용 시작</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1983</dt>
+                            <dd>매장에서 직접 구워낸<br>
+                                신선한 빵 제공 시작</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1981-1987
+                            </dt>
+                            <dd>프랜차이즈를 통한<br>
+                                글로벌 사업 확장</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1991</dt>
+                            <dd>써브웨이 한국 1호점 개점<br>
+                                (63빌딩 아케이드)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>2020</dt>
+                            <dd>써브웨이 앱 출시 ,<br>
+                                국내 첫 Drive Through 매장 오픈
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="section4">
+                <div class="intro" id="franchise">
+                    <P>FRANCHISE</P>
+                    <h3>써브웨이 프랜차이즈</h3>
+                    <p>미국 프랜차이즈 1위! 써브웨이는 매장수 및 분포지역 기준,<br>
+                        Quick Service Restaurant(QSR) 부분 No.1 프랜차이즈입니다.
+                    </p>
+                </div>
+
+
+                <div class="container py-5">
+                    <div class="row" data-masonry='{"percentPosition": true }'>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma1.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>BRAND POWER</dt>
+                                        <dd>· 세계 1위 프랜차이즈로서의 브랜드가치</dd>
+                                        <dd>· 전세계 3만 8천여개 매장으로 검증된 안정성</dd>
+                                        <dd>· 글로벌 브랜드 관리 및 지원</dd>
+                                        <dd>· 신제품 개발, 브랜드 가치 향상, 스탠더드 관리</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma2.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>MADE FRESH</dt>
+                                        <dd>· Fresh Baked Bread - 매장에서 매일 갓 구워낸 빵 제공</dd>
+                                        <dd>· Made To Order - 취향대로 재료 선택 가능</dd>
+                                        <dd>· Fresh Vegetable - 매장에서 매일 준비되는 신선한 야채</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma5.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>SEARCH FOR BETTER</dt>
+                                        <dd>우리는 더 좋은 써브웨이를 위해 매일 노력합니다.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma3.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>SMART INVESTMENTMADE FRESH</dt>
+                                        <dd>· 빠른 ROI - 최적의 비지니스 모델 제공</dd>
+                                        <dd>· 체계적인 오퍼레이션 - 용이한 직원 교육 가능</dd>
+                                        <dd>· 효율적인 인력 운영 - 인력 운영 시스템 및 체계적인 교육 제공</dd>
+                                        <dd>· 빠른 테이블 회전율과 엄격한 재고 관리</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma4.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>WELL-BEING</dt>
+                                        <dd>· 건강한 식재료 공급을 통한 균형잡힌 메뉴 제공</dd>
+                                        <dd>· 아이들에게도 안심하고 먹을 수 있는 영양식
+                                        </dd>
+                                        <dd>· 신뢰할 수 있는 영양정보 제공</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma6.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>환경을 위한 우리의 노력</dt>
+                                        <dd>써브웨이의 샐러드 보울은 95% 재생 용기로 만들어졌으며,
+                                            매장 내 일회용품 사용을 줄여 나가고 있습니다.
+                                            써브웨이는 작은 부분이라도 놓치지 않고
+                                            환경을 늘 생각하는 브랜드가 되기 위해 지속적으로 노력하고 있습니다.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./images/section4/ma7.png" alt="pranchise">
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>신선함을 위한 우리의 노력</dt>
+                                        <dd>써브웨이 빵은 인위적 당분이 함유되어 있지 않으며
+                                            비타민과 칼슘을 강화하고 나트륨을 줄이는 등
+                                            건강한 먹거리를 제공하기 위해 노력하고 있습니다.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer id="footerArea">
+            <div class="footerLogo"></div>
+            <div class="topMoveBox">
+                <a href="#" class="topMove">TOP</a>
+            </div>
+            <address>
+                서울시 서초구 강남대로 535 프린스빌딩 15층 대표 : INSOO CHO(인수조) 전화 : 02-797-5036 사업자등록번호 : 101-84-04143<br>
+                SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.
+            </address>
+        </footer>
+    </div>
+    <script>
+        $(".slide-one").click(function () {
+            $("#myCarousel").carousel(0);
+        });
+        $(".slide-two").click(function () {
+            $("#myCarousel").carousel(1);
+        });
+        $(".slide-three").click(function () {
+            $("#myCarousel").carousel(2);
+        });
+        $(".slide-four").click(function () {
+            $("#myCarousel").carousel(3);
+        });
+        $(".slide-five").click(function () {
+            $("#myCarousel").carousel(4);
+        });
+    </script>
+
+
+</body>
+
+</html>
